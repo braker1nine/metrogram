@@ -14,7 +14,7 @@
 <body ng-controller="slideshow" ng-class="loadingClass">
 	<h1>
 		<img src="assets/instagram-logo.png" /> 
-		#<input type="text" ng-model="tag" ng-change="tagChange()" ng-init="tag = 'metronetlife'" size="{{ tag.length }}" />
+		#<input type="text" ng-model="tag" ng-change="tagChange()" ng-init="tag = 'rambillwedding'" size="20" />
 	</h1>
 
 	<ul id="slides">
@@ -24,12 +24,9 @@
 			</figure>
 
 			<div class="meta">
-				<p class="qr">
-					<img ng-src="http://qrfree.kaywa.com/?s=8&amp;d={{ image.link | escape }}" />
-				<p>
 				<p class="caption">
 					<cite class="author">
-						<img ng-src="{{ image.user.profile_picture }}" width="40" height="40" /> 
+						<img ng-src="{{ image.user.profile_picture }}" width="80" height="80" /> 
 						{{ image.user.username }}
 					</cite> 
 					{{ image.caption.text }}
